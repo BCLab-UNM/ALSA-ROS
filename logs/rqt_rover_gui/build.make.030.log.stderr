@@ -1,0 +1,19 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp: In member function ‘void rqt_rover_gui::RoverGUIPlugin::logMessageEventHandler(const ros::MessageEvent<const std_msgs::String_<std::allocator<void> > >&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:250:54: error: no matching function for call to ‘QString::fromStdString(const boost::shared_ptr<const std_msgs::String_<std::allocator<void> > >&)’
+     emit displayLogMessage(QString::fromStdString(msg));
+                                                      ^
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:250:54: note: candidate is:
+In file included from /usr/include/qt4/QtCore/qobject.h:48:0,
+                 from /usr/include/qt4/QtCore/QObject:1,
+                 from /opt/ros/indigo/include/qt_gui_cpp/plugin_bridge.h:36,
+                 from /opt/ros/indigo/include/qt_gui_cpp/plugin.h:36,
+                 from /opt/ros/indigo/include/rqt_gui_cpp/plugin.h:36,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.h:24,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:7:
+/usr/include/qt4/QtCore/qstring.h:1047:16: note: static QString QString::fromStdString(const string&)
+ inline QString QString::fromStdString(const std::string &s)
+                ^
+/usr/include/qt4/QtCore/qstring.h:1047:16: note:   no known conversion for argument 1 from ‘const boost::shared_ptr<const std_msgs::String_<std::allocator<void> > >’ to ‘const string& {aka const std::basic_string<char>&}’
+make[2]: *** [CMakeFiles/rqt_rover_gui.dir/src/rover_gui_plugin.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rqt_rover_gui.dir/all] Error 2
+make: *** [all] Error 2

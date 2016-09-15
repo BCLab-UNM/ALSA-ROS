@@ -1,0 +1,16 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘float ALSAController::calcHopkinsIndex(std::vector<Coordinate*>, float, float, float, float, float, float)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:95:29: error: ‘std::vector<Coordinate*>::iterator’ has no member named ‘getDistance’
+           double dist = Sit.getDistance(*Rit);
+                             ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:104:29: error: ‘std::vector<Coordinate*>::iterator’ has no member named ‘getDistance’
+           double dist = Sit.getDistance(*Sit2);
+                             ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp: In constructor ‘TargetDetectionEvent::TargetDetectionEvent(time_t, float, float, int)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:8:25: error: no match for call to ‘(Coordinate) (float&, float&, float, time_t&)’
+   position(x, y, 0.0f, t);
+                         ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/mobility.dir/src/TargetDetectionEvent.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

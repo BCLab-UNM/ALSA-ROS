@@ -1,0 +1,274 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘void ALSAController::updateStrategy()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:75: error: conversion from ‘std::vector<TargetDetectionEvent>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent*, std::vector<TargetDetectionEvent> >}’ to non-scalar type ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ requested
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:85: error: no match for ‘operator!=’ (operand types are ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ and ‘std::vector<TargetDetectionEvent>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent*, std::vector<TargetDetectionEvent> >}’)
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                     ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:85: note: candidates are:
+In file included from /usr/include/c++/4.8/utility:70:0,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:7,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::pair<_T1, _T2>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::move_iterator<_Iterator>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::move_iterator<_Iterator>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/char_traits.h:40:0,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::fpos<_StateT>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::allocator<_CharT>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::allocator<_CharT>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   mismatched types ‘const _CharT*’ and ‘__gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/tuple:39:0,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/array:233:5: note: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^
+/usr/include/c++/4.8/array:233:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::array<_Tp, _Nm>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8:0,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/tuple:835:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^
+/usr/include/c++/4.8/tuple:835:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::tuple<_Elements ...>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:9,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_vector.h:1428:5: note: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1428:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/4.8/bits/allocator.h:46,
+                 from /usr/include/c++/4.8/string:41,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/ext/new_allocator.h:144:5: note: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/ext/new_allocator.h:144:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   ‘std::vector<TargetDetectionEvent*>::iterator {aka __gnu_cxx::__normal_iterator<TargetDetectionEvent**, std::vector<TargetDetectionEvent*> >}’ is not derived from ‘const __gnu_cxx::new_allocator<_Tp>’
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:823:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:823:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   deduced conflicting types for parameter ‘_Iterator’ (‘TargetDetectionEvent**’ and ‘TargetDetectionEvent*’)
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:8,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:817:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:817:5: note:   template argument deduction/substitution failed:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:53:100: note:   deduced conflicting types for parameter ‘_Container’ (‘std::vector<TargetDetectionEvent*>’ and ‘std::vector<TargetDetectionEvent>’)
+   for (std::vector<TargetDetectionEvent*>::iterator TDEit = targets.begin() ; TDEit != targets.end(); ++TDEit)
+                                                                                                    ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:55:40: error: ‘std::vector<TargetDetectionEvent*>::iterator’ has no member named ‘getPosition’
+       target_positions.push_back(TDEit.getPosition());
+                                        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:68:15: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() > max_x) max_x = it->getX();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:68:43: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() > max_x) max_x = it->getX();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:69:15: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() < min_x) min_x = it->getX();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:69:43: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() < min_x) min_x = it->getX();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:70:15: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() > max_y) max_y = it->getY();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:70:43: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() > max_y) max_y = it->getY();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:71:15: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() < min_y) min_y = it->getY();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:71:43: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() < min_y) min_y = it->getY();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:72:15: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() > max_z) max_z = it->getZ();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:72:43: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() > max_z) max_z = it->getZ();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:73:15: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() < min_z) min_z = it->getZ();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:73:43: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() < min_z) min_z = it->getZ();
+                                           ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

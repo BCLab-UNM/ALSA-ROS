@@ -1,0 +1,13 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘void ALSAController::updateStrategy()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:76:100: error: no matching function for call to ‘ALSAController::calcHopkinsIndex(std::vector<Coordinate>&, float&, float&, float&, float&, float&, float&)’
+   float hopkins_index = calcHopkinsIndex(target_positions, max_x, min_x, max_y, min_y, min_z, max_z);
+                                                                                                    ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:76:100: note: candidate is:
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:32:9: note: float ALSAController::calcHopkinsIndex(std::vector<Coordinate*>, float, float, float, float, float, float)
+   float calcHopkinsIndex(vector<Coordinate*> S, float max_x, float min_x, float max_y, float min_y, float max_z, float min_z);
+         ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:32:9: note:   no known conversion for argument 1 from ‘std::vector<Coordinate>’ to ‘std::vector<Coordinate*>’
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

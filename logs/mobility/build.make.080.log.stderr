@@ -1,0 +1,20 @@
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:32:7: error: extra qualification ‘ALSAController::’ on member ‘calcHopkinsIndex’ [-fpermissive]
+ float ALSAController::calcHopkinsIndex(vector<Coordinate*> S, float max_x, float min_x, float max_y, float min_y, float max_z, float min_z);
+       ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘float ALSAController::calcHopkinsIndex(std::vector<Coordinate*>, float, float, float, float, float, float)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:95:27: error: ‘space’ was not declared in this scope
+             double dist = space->norm((*Sit)->getX()-(*Rit)->getX(),(*Sit)->getY()-(*Rit)->getY(),(*Sit)->getZ()-(*Rit)->getZ());
+                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:104:27: error: ‘space’ was not declared in this scope
+             double dist = space->norm((*Sit)->getX()-(*Sit2)->getX(),(*Sit)->getY()-(*Sit2)->getY(),(*Sit)->getZ()-(*Sit2)->getZ());
+                           ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:32:7: error: extra qualification ‘ALSAController::’ on member ‘calcHopkinsIndex’ [-fpermissive]
+ float ALSAController::calcHopkinsIndex(vector<Coordinate*> S, float max_x, float min_x, float max_y, float min_y, float max_z, float min_z);
+       ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,18 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:170:29: error: no ‘float ALSAController::getMu()’ member function declared in class ‘ALSAController’
+ float ALSAController::getMu()
+                             ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void targetHandler(const ConstPtr&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:336:42: error: redeclaration of ‘std_msgs::String log_msg’
+                         std_msgs::String log_msg;
+                                          ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:324:42: error: ‘std_msgs::String log_msg’ previously declared here
+                         std_msgs::String log_msg;
+                                          ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:339:80: error: ‘class ALSAController’ has no member named ‘getMu’
+                             + boost::lexical_cast<std::string>(alsa_controller.getMu()) + ", "
+                                                                                ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

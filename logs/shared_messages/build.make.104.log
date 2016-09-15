@@ -1,0 +1,11 @@
+[  0%] [  0%] Built target std_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_lisp
+[  0%] [  0%] Built target std_msgs_generate_messages_cpp
+Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target _shared_messages_generate_messages_check_deps_TagsImage
+[  0%] [  0%] Built target std_msgs_generate_messages_py
+Built target sensor_msgs_generate_messages_py
+[ 25%] [ 50%] Built target shared_messages_generate_messages_lisp
+Built target shared_messages_generate_messages_cpp
+[100%] Built target shared_messages_generate_messages_py
+[100%] Built target shared_messages_generate_messages

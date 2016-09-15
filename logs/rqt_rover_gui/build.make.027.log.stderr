@@ -1,0 +1,66 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp: In function ‘void rqt_rover_gui::logMessageEventHandler(const ros::MessageEvent<const std_msgs::String_<std::allocator<void> > >&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:250:43: error: no matching function for call to ‘QString::QString(std::string&)’
+     emit displayLogMessage(QString(log_msg));
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:250:43: note: candidates are:
+In file included from /usr/include/qt4/QtCore/qobject.h:48:0,
+                 from /usr/include/qt4/QtCore/QObject:1,
+                 from /opt/ros/indigo/include/qt_gui_cpp/plugin_bridge.h:36,
+                 from /opt/ros/indigo/include/qt_gui_cpp/plugin.h:36,
+                 from /opt/ros/indigo/include/rqt_gui_cpp/plugin.h:36,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.h:24,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:7:
+/usr/include/qt4/QtCore/qstring.h:619:5: note: QString::QString(QString::Data*, int)
+     QString(Data *dd, int /*dummy*/) : d(dd) {}
+     ^
+/usr/include/qt4/QtCore/qstring.h:619:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/qt4/QtCore/qstring.h:591:5: note: QString::QString(int, Qt::Initialization)
+     QString(int size, Qt::Initialization);
+     ^
+/usr/include/qt4/QtCore/qstring.h:591:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/qt4/QtCore/qstring.h:503:12: note: QString::QString(const QString::Null&)
+     inline QString(const Null &): d(&shared_null) { d->ref.ref(); }
+            ^
+/usr/include/qt4/QtCore/qstring.h:503:12: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const QString::Null&’
+/usr/include/qt4/QtCore/qstring.h:421:43: note: QString::QString(const QByteArray&)
+     inline QT_ASCII_CAST_WARN_CONSTRUCTOR QString(const QByteArray &a)
+                                           ^
+/usr/include/qt4/QtCore/qstring.h:421:43: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const QByteArray&’
+/usr/include/qt4/QtCore/qstring.h:419:43: note: QString::QString(const char*)
+     inline QT_ASCII_CAST_WARN_CONSTRUCTOR QString(const char *ch) : d(fromAscii_helper(ch))
+                                           ^
+/usr/include/qt4/QtCore/qstring.h:419:43: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const char*’
+/usr/include/qt4/QtCore/qstring.h:725:8: note: QString::QString(const QString&)
+ inline QString::QString(const QString &other) : d(other.d)
+        ^
+/usr/include/qt4/QtCore/qstring.h:725:8: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const QString&’
+/usr/include/qt4/QtCore/qstring.h:694:8: note: QString::QString(const QLatin1String&)
+ inline QString::QString(const QLatin1String &aLatin1) : d(fromLatin1_helper(aLatin1.latin1()))
+        ^
+/usr/include/qt4/QtCore/qstring.h:694:8: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const QLatin1String&’
+/usr/include/qt4/QtCore/qstring.h:90:5: note: QString::QString(int, QChar)
+     QString(int size, QChar c);
+     ^
+/usr/include/qt4/QtCore/qstring.h:90:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/qt4/QtCore/qstring.h:89:5: note: QString::QString(QChar)
+     QString(QChar c);
+     ^
+/usr/include/qt4/QtCore/qstring.h:89:5: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘QChar’
+/usr/include/qt4/QtCore/qstring.h:88:14: note: QString::QString(const QChar*)
+     explicit QString(const QChar *unicode); // Qt5: merge with the above
+              ^
+/usr/include/qt4/QtCore/qstring.h:88:14: note:   no known conversion for argument 1 from ‘std::string {aka std::basic_string<char>}’ to ‘const QChar*’
+/usr/include/qt4/QtCore/qstring.h:87:5: note: QString::QString(const QChar*, int)
+     QString(const QChar *unicode, int size); // Qt5: don't cap size < 0
+     ^
+/usr/include/qt4/QtCore/qstring.h:87:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/qt4/QtCore/qstring.h:879:8: note: QString::QString()
+ inline QString::QString() : d(&shared_null) { d->ref.ref(); }
+        ^
+/usr/include/qt4/QtCore/qstring.h:879:8: note:   candidate expects 0 arguments, 1 provided
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:250:44: error: ‘displayLogMessage’ was not declared in this scope
+     emit displayLogMessage(QString(log_msg));
+                                            ^
+make[2]: *** [CMakeFiles/rqt_rover_gui.dir/src/rover_gui_plugin.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rqt_rover_gui.dir/all] Error 2
+make: *** [all] Error 2

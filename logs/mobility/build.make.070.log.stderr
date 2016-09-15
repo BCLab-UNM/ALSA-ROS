@@ -1,0 +1,10 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void targetHandler(const ConstPtr&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:322:34: error: ‘msg’ was not declared in this scope
+                         int id = msg.tags.data[0]; // By convention choose the first tag detected in the image
+                                  ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:332:62: error: ‘currentlocation’ was not declared in this scope
+                         alsa_controller.addDetectedTarget(t, currentlocation.x, currentLocation.y, id);
+                                                              ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

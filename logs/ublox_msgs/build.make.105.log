@@ -1,0 +1,57 @@
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavDOP
+[  0%] [  0%] Built target _ublox_msgs_generate_messages_check_deps_NavDGPS_SV
+Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavCLOCK
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmEPH
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_MonVER
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavTIMEGPS
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmSVSI_SV
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmRAW
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavPOSECEF
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgRATE
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmRAW_SV
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavSVINFO_SV
+[  0%] [  0%] Built target _ublox_msgs_generate_messages_check_deps_NavSBAS_SV
+Built target _ublox_msgs_generate_messages_check_deps_NavVELECEF
+[  0%] [  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmALM
+Built target _ublox_msgs_generate_messages_check_deps_CfgCFG
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavSBAS
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgANT
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_AidHUI
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavPOSLLH
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgMSG
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgPRT
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmSFRB
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavSTATUS
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_AidEPH
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavSVINFO
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_AidALM
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgGNSS
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgNAVX5
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_RxmSVSI
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavDGPS
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgNAV5
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavVELNED
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavSOL
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_CfgSBAS
+[  0%] [  0%] Built target roscpp_generate_messages_py
+Built target roscpp_generate_messages_lisp
+[  0%] Built target _ublox_msgs_generate_messages_check_deps_NavTIMEUTC
+[  0%] [  0%] [  0%] Built target rosgraph_msgs_generate_messages_py
+Built target sensor_msgs_generate_messages_cpp
+Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] [  0%] Built target std_msgs_generate_messages_lisp
+Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target _catkin_empty_exported_target
+[  0%] [  0%] Built target sensor_msgs_generate_messages_lisp
+Built target geometry_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[ 62%] [ 66%] Built target ublox_msgs_generate_messages_cpp
+Built target ublox_msgs_generate_messages_py
+[ 98%] Built target ublox_msgs_generate_messages_lisp
+[ 98%] Built target ublox_msgs_generate_messages
+[100%] Built target ublox_msgs

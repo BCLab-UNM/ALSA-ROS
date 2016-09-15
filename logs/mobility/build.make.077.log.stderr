@@ -1,0 +1,11 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:50:7: error: prototype for ‘float ALSAController::calcHopkinsIndex(std::vector<Coordinate*>, float, float, float, float, float, float)’ does not match any in class ‘ALSAController’
+ float ALSAController::calcHopkinsIndex(vector<Coordinate*> S, float max_x, float min_x, float max_y, float min_y, float max_z, float min_z)
+       ^
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:32:9: error: candidate is: float ALSAController::calcHopkinsIndex()
+   float calcHopkinsIndex();
+         ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

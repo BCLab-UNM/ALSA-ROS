@@ -1,0 +1,10 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:26:5: error: prototype for ‘int TargetDetectionEvent::getID()’ does not match any in class ‘TargetDetectionEvent’
+ int TargetDetectionEvent::getID()
+     ^
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:11:8: error: candidate is: float TargetDetectionEvent::getID()
+  float getID();
+        ^
+make[2]: *** [CMakeFiles/mobility.dir/src/TargetDetectionEvent.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

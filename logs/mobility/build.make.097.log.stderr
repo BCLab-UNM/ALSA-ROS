@@ -1,0 +1,40 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘void ALSAController::updateStrategy()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:69:15: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() > max_x) max_x = it->getX();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:69:43: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() > max_x) max_x = it->getX();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:70:15: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() < min_x) min_x = it->getX();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:70:43: error: request for member ‘getX’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getX() < min_x) min_x = it->getX();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:71:15: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() > max_y) max_y = it->getY();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:71:43: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() > max_y) max_y = it->getY();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:72:15: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() < min_y) min_y = it->getY();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:72:43: error: request for member ‘getY’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getY() < min_y) min_y = it->getY();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:73:15: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() > max_z) max_z = it->getZ();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:73:43: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() > max_z) max_z = it->getZ();
+                                           ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:74:15: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() < min_z) min_z = it->getZ();
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:74:43: error: request for member ‘getZ’ in ‘* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Coordinate**, std::vector<Coordinate*> >()’, which is of pointer type ‘Coordinate*’ (maybe you meant to use ‘->’ ?)
+       if (it->getZ() < min_z) min_z = it->getZ();
+                                           ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,27 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void mobilityStateMachine(const ros::TimerEvent&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:193:28: error: ‘current_location’ was not declared in this scope
+       float len = sqrt(pow(current_location.x-goalLocation.x,2)+pow(current_location.x-goalLocation.x,2));
+                            ^
+In file included from /opt/ros/indigo/include/ros/ros.h:40:0,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:2:
+/opt/ros/indigo/include/ros/console.h:342:176: warning: too many arguments for format [-Wformat-extra-args]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+                                                                                                                                                                                ^
+/opt/ros/indigo/include/ros/console.h:345:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(0, __VA_ARGS__)
+     ^
+/opt/ros/indigo/include/ros/console.h:375:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+       ^
+/opt/ros/indigo/include/ros/console.h:557:35: note: in expansion of macro ‘ROS_LOG_COND’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+                                   ^
+/opt/ros/indigo/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:195:7: note: in expansion of macro ‘ROS_INFO’
+       ROS_INFO("%s Goal: x=%f, y=%f, length=\n", host, goalLocation.x, goalLocation.y, len);
+       ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

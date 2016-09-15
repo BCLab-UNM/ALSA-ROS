@@ -1,0 +1,93 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void targetHandler(const ConstPtr&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:314:41: error: too few arguments to function ‘time_t time(time_t*)’
+                         time_t t = time();
+                                         ^
+In file included from /usr/include/pthread.h:24:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/gthr-default.h:35,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/gthr.h:148,
+                 from /usr/include/c++/4.8/ext/atomicity.h:35,
+                 from /usr/include/c++/4.8/bits/basic_string.h:39,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from /usr/include/c++/4.8/array:38,
+                 from /usr/include/c++/4.8/tuple:39,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.h:5,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:1:
+/usr/include/time.h:192:15: note: declared here
+ extern time_t time (time_t *__timer) __THROW;
+               ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:320:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+In file included from /opt/ros/indigo/include/ros/serialization.h:37:0,
+                 from /opt/ros/indigo/include/ros/publisher.h:34,
+                 from /opt/ros/indigo/include/ros/node_handle.h:32,
+                 from /opt/ros/indigo/include/ros/ros.h:45,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:2:
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = char [45]]’:
+/opt/ros/indigo/include/ros/message_traits.h:255:104:   required from ‘const char* ros::message_traits::md5sum(const M&) [with M = char [45]]’
+/opt/ros/indigo/include/ros/publisher.h:112:7:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [45]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:196:74:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:126:34: error: request for member ‘__getMD5Sum’ in ‘m’, which is of non-class type ‘const char [45]’
+     return m.__getMD5Sum().c_str();
+                                  ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::DataType<M>::value(const M&) [with M = char [45]]’:
+/opt/ros/indigo/include/ros/message_traits.h:264:106:   required from ‘const char* ros::message_traits::datatype(const M&) [with M = char [45]]’
+/opt/ros/indigo/include/ros/publisher.h:112:7:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [45]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:196:74:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:143:36: error: request for member ‘__getDataType’ in ‘m’, which is of non-class type ‘const char [45]’
+     return m.__getDataType().c_str();
+                                    ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = char [37]]’:
+/opt/ros/indigo/include/ros/message_traits.h:255:104:   required from ‘const char* ros::message_traits::md5sum(const M&) [with M = char [37]]’
+/opt/ros/indigo/include/ros/publisher.h:112:7:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [37]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:318:84:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:126:34: error: request for member ‘__getMD5Sum’ in ‘m’, which is of non-class type ‘const char [37]’
+     return m.__getMD5Sum().c_str();
+                                  ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::DataType<M>::value(const M&) [with M = char [37]]’:
+/opt/ros/indigo/include/ros/message_traits.h:264:106:   required from ‘const char* ros::message_traits::datatype(const M&) [with M = char [37]]’
+/opt/ros/indigo/include/ros/publisher.h:112:7:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [37]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:318:84:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:143:36: error: request for member ‘__getDataType’ in ‘m’, which is of non-class type ‘const char [37]’
+     return m.__getDataType().c_str();
+                                    ^
+In file included from /opt/ros/indigo/include/ros/publisher.h:34:0,
+                 from /opt/ros/indigo/include/ros/node_handle.h:32,
+                 from /opt/ros/indigo/include/ros/ros.h:45,
+                 from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:2:
+/opt/ros/indigo/include/ros/serialization.h: In instantiation of ‘static uint32_t ros::serialization::Serializer<T>::serializedLength(typename boost::call_traits<T>::param_type) [with T = char [45]; uint32_t = unsigned int; typename boost::call_traits<T>::param_type = const char* const]’:
+/opt/ros/indigo/include/ros/serialization.h:172:43:   required from ‘uint32_t ros::serialization::serializationLength(const T&) [with T = char [45]; uint32_t = unsigned int]’
+/opt/ros/indigo/include/ros/serialization.h:848:45:   required from ‘ros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = char [45]]’
+/opt/ros/indigo/include/ros/publisher.h:118:67:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [45]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:196:74:   required from here
+/opt/ros/indigo/include/ros/serialization.h:144:34: error: request for member ‘serializationLength’ in ‘t’, which is of non-class type ‘boost::call_traits<char [45]>::param_type {aka const char* const}’
+     return t.serializationLength();
+                                  ^
+/opt/ros/indigo/include/ros/serialization.h: In instantiation of ‘static void ros::serialization::Serializer<T>::write(Stream&, typename boost::call_traits<T>::param_type) [with Stream = ros::serialization::OStream; T = char [45]; typename boost::call_traits<T>::param_type = const char* const]’:
+/opt/ros/indigo/include/ros/serialization.h:154:33:   required from ‘void ros::serialization::serialize(Stream&, const T&) [with T = char [45]; Stream = ros::serialization::OStream]’
+/opt/ros/indigo/include/ros/serialization.h:855:23:   required from ‘ros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = char [45]]’
+/opt/ros/indigo/include/ros/publisher.h:118:67:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [45]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:196:74:   required from here
+/opt/ros/indigo/include/ros/serialization.h:127:5: error: request for member ‘serialize’ in ‘t’, which is of non-class type ‘boost::call_traits<char [45]>::param_type {aka const char* const}’
+     t.serialize(stream.getData(), 0);
+     ^
+/opt/ros/indigo/include/ros/serialization.h: In instantiation of ‘static uint32_t ros::serialization::Serializer<T>::serializedLength(typename boost::call_traits<T>::param_type) [with T = char [37]; uint32_t = unsigned int; typename boost::call_traits<T>::param_type = const char* const]’:
+/opt/ros/indigo/include/ros/serialization.h:172:43:   required from ‘uint32_t ros::serialization::serializationLength(const T&) [with T = char [37]; uint32_t = unsigned int]’
+/opt/ros/indigo/include/ros/serialization.h:848:45:   required from ‘ros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = char [37]]’
+/opt/ros/indigo/include/ros/publisher.h:118:67:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [37]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:318:84:   required from here
+/opt/ros/indigo/include/ros/serialization.h:144:34: error: request for member ‘serializationLength’ in ‘t’, which is of non-class type ‘boost::call_traits<char [37]>::param_type {aka const char* const}’
+     return t.serializationLength();
+                                  ^
+/opt/ros/indigo/include/ros/serialization.h: In instantiation of ‘static void ros::serialization::Serializer<T>::write(Stream&, typename boost::call_traits<T>::param_type) [with Stream = ros::serialization::OStream; T = char [37]; typename boost::call_traits<T>::param_type = const char* const]’:
+/opt/ros/indigo/include/ros/serialization.h:154:33:   required from ‘void ros::serialization::serialize(Stream&, const T&) [with T = char [37]; Stream = ros::serialization::OStream]’
+/opt/ros/indigo/include/ros/serialization.h:855:23:   required from ‘ros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = char [37]]’
+/opt/ros/indigo/include/ros/publisher.h:118:67:   required from ‘void ros::Publisher::publish(const M&) const [with M = char [37]]’
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:318:84:   required from here
+/opt/ros/indigo/include/ros/serialization.h:127:5: error: request for member ‘serialize’ in ‘t’, which is of non-class type ‘boost::call_traits<char [37]>::param_type {aka const char* const}’
+     t.serialize(stream.getData(), 0);
+     ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

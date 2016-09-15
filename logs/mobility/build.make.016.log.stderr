@@ -1,0 +1,23 @@
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:6:28: error: expected ‘)’ before ‘t’
+  TargetDetectionEvent(time t, float x, float y, int id);
+                            ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:3:1: error: prototype for ‘TargetDetectionEvent::TargetDetectionEvent(time_t, float, float, int)’ does not match any in class ‘TargetDetectionEvent’
+ TargetDetectionEvent::TargetDetectionEvent( time_t t, float x, float y, int id)
+ ^
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:3:7: error: candidates are: constexpr TargetDetectionEvent::TargetDetectionEvent(TargetDetectionEvent&&)
+ class TargetDetectionEvent
+       ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:3:7: error:                 constexpr TargetDetectionEvent::TargetDetectionEvent(const TargetDetectionEvent&)
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:3:7: error:                 TargetDetectionEvent::TargetDetectionEvent()
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:26:5: error: prototype for ‘int TargetDetectionEvent::getID()’ does not match any in class ‘TargetDetectionEvent’
+ int TargetDetectionEvent::getID()
+     ^
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:11:8: error: candidate is: float TargetDetectionEvent::getID()
+  float getID();
+        ^
+make[2]: *** [CMakeFiles/mobility.dir/src/TargetDetectionEvent.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

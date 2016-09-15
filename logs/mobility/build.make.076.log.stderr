@@ -1,0 +1,10 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘float ALSAController::calcHopkinsIndex()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:69:20: error: ‘space’ was not declared in this scope
+     double min_x = space->getXMinBound();
+                    ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:99:33: error: ‘DBL_MAX’ was not declared in this scope
+         double min_R_distance = DBL_MAX;
+                                 ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

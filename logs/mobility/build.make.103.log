@@ -1,0 +1,51 @@
+[  0%] Built target shared_messages_generate_messages_py
+[  0%] Built target shared_messages_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] [  0%] Built target rosgraph_msgs_generate_messages_cpp
+Built target std_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target shared_messages_generate_messages_cpp
+[  0%] [  0%] Built target sensor_msgs_generate_messages_lisp
+Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target mobility
+[0m[ 25%] [ 50%] [32mBuilding CXX object CMakeFiles/mobility.dir/src/mobility.cpp.o
+[0m[32mBuilding CXX object CMakeFiles/mobility.dir/src/ALSAController.cpp.o
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘void ALSAController::updateStrategy()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:77:8: error: request for member ‘hopkins_index’ in ‘this’, which is of pointer type ‘ALSAController* const’ (maybe you meant to use ‘->’ ?)
+   this.hopkins_index = calcHopkinsIndex(target_positions, max_x, min_x, max_y, min_y, min_z, max_z);
+        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:79:8: error: request for member ‘mu’ in ‘this’, which is of pointer type ‘ALSAController* const’ (maybe you meant to use ‘->’ ?)
+   this.mu = mapHopkinsToMu(hopkins_index);
+        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In function ‘float getHopkinsIndex()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:167:10: error: ‘hopkins_index’ was not declared in this scope
+   return hopkins_index;
+          ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In function ‘float getMu()’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:172:10: error: ‘mu’ was not declared in this scope
+   return mu;
+          ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void targetHandler(const ConstPtr&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:336:42: error: redeclaration of ‘std_msgs::String log_msg’
+                         std_msgs::String log_msg;
+                                          ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:324:42: error: ‘std_msgs::String log_msg’ previously declared here
+                         std_msgs::String log_msg;
+                                          ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:339:80: error: ‘class ALSAController’ has no member named ‘getMu’
+                             + boost::lexical_cast<std::string>(alsa_controller.getMu()) + ", "
+                                                                                ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

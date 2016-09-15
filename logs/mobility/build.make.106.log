@@ -1,0 +1,33 @@
+[  0%] Built target shared_messages_generate_messages_py
+[  0%] Built target shared_messages_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target shared_messages_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target mobility
+[0m[ 25%] [32mBuilding CXX object CMakeFiles/mobility.dir/src/mobility.cpp.o
+[0m[ 50%] [32mBuilding CXX object CMakeFiles/mobility.dir/src/ALSAController.cpp.o
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:170:29: error: no ‘float ALSAController::getMu()’ member function declared in class ‘ALSAController’
+ float ALSAController::getMu()
+                             ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void targetHandler(const ConstPtr&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:338:80: error: ‘class ALSAController’ has no member named ‘getMu’
+                             + boost::lexical_cast<std::string>(alsa_controller.getMu()) + ", "
+                                                                                ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

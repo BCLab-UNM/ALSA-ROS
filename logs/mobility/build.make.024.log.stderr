@@ -1,0 +1,7 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:49:37: error: no ‘void ALSAController::updateStrategy()’ member function declared in class ‘ALSAController’
+ void ALSAController::updateStrategy()
+                                     ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

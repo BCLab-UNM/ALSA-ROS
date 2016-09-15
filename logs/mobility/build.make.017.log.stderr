@@ -1,0 +1,24 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp: In constructor ‘TargetDetectionEvent::TargetDetectionEvent(time_t, float, float, int)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:5:8: error: request for member ‘id’ in ‘this’, which is of pointer type ‘TargetDetectionEvent* const’ (maybe you meant to use ‘->’ ?)
+   this.id = id;
+        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:6:8: error: request for member ‘t’ in ‘this’, which is of pointer type ‘TargetDetectionEvent* const’ (maybe you meant to use ‘->’ ?)
+   this.t = t;
+        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:7:8: error: request for member ‘x’ in ‘this’, which is of pointer type ‘TargetDetectionEvent* const’ (maybe you meant to use ‘->’ ?)
+   this.x = x;
+        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:8:8: error: request for member ‘y’ in ‘this’, which is of pointer type ‘TargetDetectionEvent* const’ (maybe you meant to use ‘->’ ?)
+   this.y = y;
+        ^
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp: At global scope:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:26:5: error: prototype for ‘int TargetDetectionEvent::getID()’ does not match any in class ‘TargetDetectionEvent’
+ int TargetDetectionEvent::getID()
+     ^
+In file included from /nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.cpp:1:0:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/TargetDetectionEvent.h:11:8: error: candidate is: float TargetDetectionEvent::getID()
+  float getID();
+        ^
+make[2]: *** [CMakeFiles/mobility.dir/src/TargetDetectionEvent.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

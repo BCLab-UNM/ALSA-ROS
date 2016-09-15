@@ -1,0 +1,7 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp: In function ‘void rqt_rover_gui::logMessageEventHandler(const ros::MessageEvent<const std_msgs::String_<std::allocator<void> > >&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/rqt_rover_gui/src/rover_gui_plugin.cpp:250:59: error: ‘displayLogMessage’ was not declared in this scope
+     emit displayLogMessage(QString::fromStdString(log_msg));
+                                                           ^
+make[2]: *** [CMakeFiles/rqt_rover_gui.dir/src/rover_gui_plugin.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rqt_rover_gui.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,7 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp: In function ‘void mobilityStateMachine(const ros::TimerEvent&)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/mobility.cpp:192:30: error: ‘alsa_controller’ was not declared in this scope
+       GoalState goal_state = alsa_controller.getNextGoalPosition( current_position );
+                              ^
+make[2]: *** [CMakeFiles/mobility.dir/src/mobility.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,7 @@
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp: In member function ‘std::pair<float, float> ALSAController::getNextGoalPosition(std::pair<float, float>)’:
+/nfs/home/matthew/Swarmathon-ALSA/src/mobility/src/ALSAController.cpp:23:49: error: expected ‘)’ before ‘;’ token
+   float step_length = pow(xmin*unif_var,1/(mu-1);
+                                                 ^
+make[2]: *** [CMakeFiles/mobility.dir/src/ALSAController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mobility.dir/all] Error 2
+make: *** [all] Error 2
